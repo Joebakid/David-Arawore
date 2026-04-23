@@ -1,43 +1,53 @@
 const jobs = [
   {
-    role: "Community Lead",
-    company: "Web3 Project",
+    role: "Privacy Growth Lead & Global Ambassador",
+    company: "Zano, Firo, & Cake Wallet",
+    period: "2023 — Present",
+    tags: ["Privacy Tech", "Community Growth", "PR & Partnerships"],
+    bullets: [
+      "Driving African market expansion for Cake Wallet by securing high-impact partnerships with Blockfest Africa (4.5K+ audience) and Stellar West Africa.",
+      "Improved community participation for Zano by 64% in 3 months; served as a three-time 'Contributor of the Month'.",
+      "Pioneered the newsletter series for Firo, streamlining communications to foster consistent community growth.",
+    ],
+  },
+  {
+    role: "Creator & Strategist",
+    company: "Rykte Agency & Freelance",
+    period: "2024",
+    tags: ["Ghostwriting", "Viral Strategy", "KOL Growth"],
+    bullets: [
+      "Published 7+ viral ghostwritten pieces for Web3 KOLs and projects, consistently driving high conversion rates.",
+      "Served as content strategist for prominent KOLs, maintaining an 80% client return/recommendation rate.",
+      "Lead creator roles across multiple crypto platforms including Block Telegraph and Uhuru NFTs.",
+    ],
+  },
+  {
+    role: "Founder & Host",
+    company: "Privacy Chronicles",
     period: "2025 — Present",
-    tags: ["Discord Management", "Token Strategy", "Growth"],
+    tags: ["Web3 Podcasting", "Audio Production", "Thought Leadership"],
     bullets: [
-      "Grew Discord community from 2K to 12K members in under 6 months through structured engagement programs.",
-      "Developed and executed weekly content calendars aligning with product milestones and market cycles.",
-      "Coordinated AMAs, Twitter Spaces, and partner collaborations to increase protocol visibility.",
+      "Building a premier privacy-focused Web3 podcast dedicated to exploring the future of digital sovereignty.",
+      "Curating deep-dive discussions for platforms like Spotify and 𝕏 to educate and engage a global audience on decentralized privacy solutions.",
     ],
   },
   {
-    role: "Content Creator & Strategist",
-    company: "Freelance / Web3",
-    period: "2024 — 2025",
-    tags: ["Copywriting", "Twitter / X", "Threads"],
+    role: "Market Analyst",
+    company: "Bison Wallet",
+    period: "2025",
+    tags: ["Market Research", "Decred Ecosystem", "Data Analysis"],
     bullets: [
-      "Produced long-form and short-form content for DeFi and NFT projects reaching 50K+ cumulative impressions.",
-      "Crafted narrative-driven threads simplifying complex blockchain concepts for retail audiences.",
-      "Collaborated with founders to align brand voice with community expectations and growth targets.",
+      "Conducted comprehensive market surveys to identify user preferences and pain points within the Decred ecosystem.",
+      "Synthesized user feedback into actionable insights to improve wallet interface and user adoption strategy.",
     ],
-  },
-  {
-    role: "Medical Professional",
-    company: "Healthcare",
-    period: "2020 — 2024",
-    tags: ["Research", "Communication", "Systems Thinking"],
-    bullets: [
-      "Developed precision-oriented analytical skills now applied to community data, protocol research, and strategy.",
-      "Communicated complex information clearly to diverse audiences — a skill directly transferred to Web3 education.",
-    ],
-  },
+  }
 ];
 
 export const Experience = () => (
-  <section className="bg-transparent">
+  <section id="experience" className="bg-transparent py-20">
     <div className="container-main">
 
-      <p className="text-xs font-mono text-[#A855F7] tracking-[0.3em] uppercase mb-3">03 — Experience</p>
+      <p className="text-xs font-mono text-[#A855F7] tracking-[0.3em] uppercase mb-3">04 — Experience</p>
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12">
         What I've <span className="gradient-text">Built</span>
       </h2>
@@ -46,7 +56,7 @@ export const Experience = () => (
         {jobs.map((job, i) => (
           <div key={i} className="group relative grid sm:grid-cols-[160px_1fr] gap-4 sm:gap-10 py-10 border-b border-[#1E1E1E] last:border-0">
 
-            {/* Timeline dot (desktop) */}
+            {/* Timeline dot */}
             <div className="hidden sm:flex flex-col items-end pt-1 gap-1 text-right">
               <span className="text-xs font-mono text-gray-600 leading-5">{job.period}</span>
               <div className="w-2 h-2 rounded-full bg-[#A855F7]/50 group-hover:bg-[#A855F7] transition-colors mt-1 self-end" />
@@ -54,7 +64,6 @@ export const Experience = () => (
 
             {/* Content */}
             <div className="space-y-4">
-              {/* Mobile period */}
               <p className="sm:hidden text-xs font-mono text-gray-600">{job.period}</p>
 
               <div>
@@ -64,7 +73,6 @@ export const Experience = () => (
                 <p className="text-sm text-[#A855F7] font-mono mt-0.5">{job.company}</p>
               </div>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-2">
                 {job.tags.map((tag) => (
                   <span key={tag} className="px-3 py-1 text-xs border border-[#2A2A2A] rounded-full text-gray-500 bg-[#151515]">
@@ -73,7 +81,6 @@ export const Experience = () => (
                 ))}
               </div>
 
-              {/* Bullets */}
               <ul className="space-y-2">
                 {job.bullets.map((b, j) => (
                   <li key={j} className="flex gap-3 text-sm text-gray-400 leading-relaxed">

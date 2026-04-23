@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 export const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const links = ["About", "Services", "Experience", "Contact"];
+  // Added Testimonials to the links array
+  const links = ["About", "Services", "Experience", "Testimonials", "Contact"];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center py-6 px-4">
@@ -26,8 +27,11 @@ export const Nav = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <a href="#contact" className="hidden md:block px-5 py-2 text-xs font-bold text-white bg-gradient-to-r from-[#A855F7] to-[#D946EF] rounded-xl hover:shadow-[0_0_15px_rgba(217,70,239,0.5)] transition-all">
+        {/* CTA - Now opens email client */}
+        <a 
+          href="mailto:daravid030@gmail.com" 
+          className="hidden md:block px-5 py-2 text-xs font-bold text-white bg-gradient-to-r from-[#A855F7] to-[#D946EF] rounded-xl hover:shadow-[0_0_15px_rgba(217,70,239,0.5)] transition-all"
+        >
           Hire Me
         </a>
 
@@ -51,7 +55,7 @@ export const Nav = () => {
             </a>
           ))}
           <a 
-            href="#contact" 
+            href="mailto:daravid030@gmail.com" 
             className="mt-4 text-center py-4 text-sm font-bold text-white bg-gradient-to-r from-[#A855F7] to-[#D946EF] rounded-xl"
             onClick={() => setIsOpen(false)}
           >

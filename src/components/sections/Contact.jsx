@@ -1,7 +1,7 @@
 export const Contact = () => {
   const socials = [
     { name: "Email", icon: "✉️", link: "mailto:daravid030@gmail.com", val: "daravid030@gmail.com", color: "text-[#A855F7]" },
-    { name: "X (Twitter)", icon: "X", link: "https://x.com/IamDaravid_", val: "@IamDaravid_", color: "text-[#1DA1F2]" },
+    { name: "X (Twitter)", icon: "𝕏", link: "https://x.com/IamDaravid_", val: "@IamDaravid_", color: "text-[#1DA1F2]" },
     { name: "TikTok", icon: "🎵", link: "https://tiktok.com/@iamdaravid", val: "@iamdaravid", color: "text-[#FE2C55]" },
     { name: "Substack", icon: "✍️", link: "https://substack.com/@iamdaravid", val: "@iamdaravid", color: "text-[#FF6719]" }
   ];
