@@ -1,11 +1,11 @@
 export const About = () => (
-  <section className="bg-transparent">
+  <section className="bg-transparent py-20">
     <div className="container-main">
 
       {/* Section label */}
-      <p className="text-xs font-mono text-[#A855F7] tracking-[0.3em] uppercase mb-3">01 — About</p>
+      <p className="text-xs font-mono text-[#A855F7] tracking-[0.3em] uppercase mb-3">02 — About</p>
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 leading-tight">
-        Who is <span className="gradient-text">David Creates?</span>
+        Who is <span className="gradient-text">David Arawore?</span>
       </h2>
 
       <div className="grid md:grid-cols-[1fr_1px_1fr] gap-10 md:gap-16 items-start">
@@ -19,7 +19,7 @@ export const About = () => (
             My work sits at the intersection of <span className="text-white font-medium">decentralized technology</span> and <span className="text-white font-medium">human behavior</span>. I help blockchain projects communicate clearly, grow engaged communities, and build lasting trust with their audiences.
           </p>
           <p>
-            When I'm not deep in Discord threads or mapping content strategies, I'm studying emerging protocols, experimenting with new formats, and thinking about the future of digital ownership.
+            Operating out of Nigeria, I draw inspiration from the dynamic African tech ecosystem to build global digital infrastructure. When I'm not deep in strategy, I'm analyzing emerging protocols and thinking about the future of digital ownership.
           </p>
         </div>
 
@@ -29,11 +29,11 @@ export const About = () => (
         {/* Quick facts */}
         <div className="space-y-6">
           {[
-            { label: "Location", value: "United States 🇺🇸" },
+            { label: "Location", value: "Nigeria 🇳🇬" },
             { label: "Background", value: "Medicine + Web3" },
             { label: "Focus Area", value: "Community & Content Strategy" },
             { label: "Building since", value: "2024" },
-            { label: "Languages", value: "English · Portuguese" },
+            { label: "Languages", value: "English · Pidgin" },
             { label: "Open to", value: "Remote Collaborations Worldwide" },
           ].map(({ label, value }) => (
             <div key={label} className="flex justify-between items-start gap-4 border-b border-[#1E1E1E] pb-4 last:border-0 last:pb-0">
